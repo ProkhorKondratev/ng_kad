@@ -6,8 +6,8 @@ import os
 class NGWServer:
     url_upload = os.getenv('NGW_UPLOAD_URL', 'http://10.7.246.199:8080/api/component/file_upload/')
     url_resource = os.getenv('NGW_RESOURCE_URL', 'http://10.7.246.199:8080/api/resource/')
-    auth = (os.getenv('NGW_USER', 'administrator'), os.getenv('NGW_PASSWORD', 'admin'))
-    parent_id = os.getenv('NGW_RESOURCE_DIR', 76)
+    auth = (os.getenv('NGW_USER'), os.getenv('NGW_PASSWORD'))
+    parent_id = os.getenv('NGW_RESOURCE_DIR')
     headers = {'Accept': '*/*'}
 
     @staticmethod

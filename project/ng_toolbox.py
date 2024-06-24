@@ -7,8 +7,8 @@ class NGToolbox:
     upload_url = os.getenv('NGT_UPLOAD_URL', 'https://toolbox.nextgis.com/api/upload/?filename=')
     execute_url = os.getenv('NGT_EXECUTE_URL', 'https://toolbox.nextgis.com/api/json/execute/')
     status_url = os.getenv('NGT_STATUS_URL', 'https://toolbox.nextgis.com/api/json/status/')
-    token = os.getenv('NGT_TOKEN', 'cad4f28c-b542-47a3-a198-fc7cddb42a97')
-    api_key = os.getenv('NGT_API_KEY', 'f32a1e66882a50ab1ba3d3a3d5637c0b')
+    token = os.getenv('NGT_TOKEN')
+    api_key = os.getenv('NGT_API_KEY')
     headers = {'Authorization': 'Token ' + token}
 
     @staticmethod
